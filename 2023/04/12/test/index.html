@@ -19,25 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.15.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="一人之辩重于九鼎之宝；三寸之舌强于百万雄师">
-<meta property="og:type" content="website">
+    <meta name="description" content="PIAFusion: A progressive infrared and visible image fusion network based on illumination aware 来源：Information Fusion  论文亮点: 作者提出的方法————基于照明感知的渐进式红外和可见光图像融合框架（PIAFusion）在目标保持和纹理保存方面强于最先进的替代方法。研究了照明不平衡问">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Bobosolomon的Blog">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2023/04/12/test/index.html">
 <meta property="og:site_name" content="Bobosolomon的Blog">
-<meta property="og:description" content="一人之辩重于九鼎之宝；三寸之舌强于百万雄师">
+<meta property="og:description" content="PIAFusion: A progressive infrared and visible image fusion network based on illumination aware 来源：Information Fusion  论文亮点: 作者提出的方法————基于照明感知的渐进式红外和可见光图像融合框架（PIAFusion）在目标保持和纹理保存方面强于最先进的替代方法。研究了照明不平衡问">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-04-12T01:14:43.654Z">
+<meta property="article:modified_time" content="2023-04-12T01:15:27.620Z">
 <meta property="article:author" content="Bobosolomon">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2023/04/12/test/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023/04/12/test/","path":"2023/04/12/test/","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Bobosolomon的Blog</title>
+<title> | Bobosolomon的Blog</title>
   
 
 
@@ -71,7 +73,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Bobosolomon的Blog</h1>
+      <p class="site-title">Bobosolomon的Blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -124,7 +126,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -137,6 +139,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#PIAFusion-A-progressive-infrared-and-visible-image-fusion-network-based-on-illumination-aware"><span class="nav-number">1.</span> <span class="nav-text">PIAFusion: A progressive infrared and visible image fusion network based on illumination aware</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DIVFusion-Darkness-free-infrared-and-visible-image-fusion"><span class="nav-number">2.</span> <span class="nav-text">DIVFusion: Darkness-free infrared and visible image fusion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FusionGAN-A-generative-adversarial-network-for-infrared-and-visible-image-fusion"><span class="nav-number">3.</span> <span class="nav-text">FusionGAN: A generative adversarial network for infrared and visible image fusion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RXDNFuse-A-aggregated-residual-dense-network-for-infrared-and-visible-image-fusion"><span class="nav-number">4.</span> <span class="nav-text">RXDNFuse: A aggregated residual dense network for infrared and visible image fusion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Image-fusion-in-the-loop-of-high-level-vision-tasks-A-semantic-aware-real-time-infrared-and-visible-image-fusion-network"><span class="nav-number">5.</span> <span class="nav-text">Image fusion in the loop of high-level vision tasks: A semantic-aware real-time infrared and visible image fusion network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Learning-a-Generative-Model-for-Fusing-Infrared-and-Visible-Images-via-Conditional-Generative-Adversarial-Network-with-Dual-Discriminators"><span class="nav-number">6.</span> <span class="nav-text">Learning a Generative Model for Fusing Infrared and Visible Images via Conditional Generative Adversarial Network with Dual Discriminators</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DIDFuse-Deep-Image-Decomposition-for-Infrared-and-Visible-Image-Fusion"><span class="nav-number">7.</span> <span class="nav-text">DIDFuse: Deep Image Decomposition for Infrared and Visible Image Fusion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Efficient-and-Model-Based-Infrared-and-Visible-Image-Fusion-via-Algorithm-Unrolling"><span class="nav-number">8.</span> <span class="nav-text">Efficient and Model-Based Infrared and Visible Image Fusion via Algorithm Unrolling</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NestFuse-An-Infrared-and-Visible-Image-Fusion-Architecture-based-on-Nest-Connection-and-Spatial-x2F-Channel-Attention-Models"><span class="nav-number">9.</span> <span class="nav-text">NestFuse: An Infrared and Visible Image Fusion Architecture based on Nest Connection and Spatial&#x2F;Channel Attention Models</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93"><span class="nav-number"></span> <span class="nav-text">个人总结:</span></a></div>
         </div>
         <!--/noindex-->
 
@@ -168,16 +171,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/12/test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -191,15 +195,15 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Bobosolomon的Blog">
+      <meta itemprop="name" content=" | Bobosolomon的Blog">
       <meta itemprop="description" content="">
     </span>
 
     
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/04/12/test/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -214,6 +218,13 @@
     </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
     <span class="post-meta-break"></span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
@@ -238,7 +249,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h3 id="PIAFusion-A-progressive-infrared-and-visible-image-fusion-network-based-on-illumination-aware"><a href="#PIAFusion-A-progressive-infrared-and-visible-image-fusion-network-based-on-illumination-aware" class="headerlink" title="PIAFusion: A progressive infrared and visible image fusion network based on illumination aware"></a>PIAFusion: A progressive infrared and visible image fusion network based on illumination aware</h3><blockquote>
+        <h3 id="PIAFusion-A-progressive-infrared-and-visible-image-fusion-network-based-on-illumination-aware"><a href="#PIAFusion-A-progressive-infrared-and-visible-image-fusion-network-based-on-illumination-aware" class="headerlink" title="PIAFusion: A progressive infrared and visible image fusion network based on illumination aware"></a>PIAFusion: A progressive infrared and visible image fusion network based on illumination aware</h3><blockquote>
 <p>来源：Information Fusion</p>
 </blockquote>
 <p><strong>论文亮点:</strong></p>
@@ -301,7 +312,6 @@
 </li>
 </ul>
 
-      
     </div>
 
     
@@ -309,113 +319,67 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/username">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/channel_name">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </span>
+
+          <img class="social-item-img" src="/images/wechat_channel.png">
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
 </div>
 
 
+        
 
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/11/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/luosu.png">
-      <meta itemprop="name" content="Bobosolomon">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bobosolomon的Blog">
-      <meta itemprop="description" content="一人之辩重于九鼎之宝；三寸之舌强于百万雄师">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Bobosolomon的Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/04/11/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-04-11 20:55:47 / 修改时间：23:37:41" itemprop="dateCreated datePublished" datetime="2023-04-11T20:55:47+08:00">2023-04-11</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>603</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<p>配置完 yilia 后，发现缺少一些东西，百度之下，找到了特别喜欢的主题 ——next。跟大家分享配置经验。</p>
-<ul>
-<li>首先，本文是根据我自己的博客配置而写的，并不全面，其他美化配置在文末提供了相应的参考链接。欢迎浏览我的博客：<a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=http://destinytaoer.cn">destiny’Note</a></li>
-<li>其次，本文中有部分自己的改进方案，并非全部摘自他文</li>
-</ul>
-<p>作者：destiny0904<br>链接：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/344cf061598d">https://www.jianshu.com/p/344cf061598d</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/04/11/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -424,6 +388,8 @@
 
 
 
+
+    <div class="comments gitalk-container"></div>
 </div>
   </main>
 
@@ -509,7 +475,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"bobosolomon","repo":"bobosolomon.github.io","client_id":"daddc18a3cfe23e38afa","client_secret":"87af47d92668effb871c7e61aef766ec15305fbd","admin_user":"bobosolomon","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"d1546d731a9f30cc80127d57142a482b"}</script>
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"bobosolomon","repo":"bobosolomon.github.io","client_id":"daddc18a3cfe23e38afa","client_secret":"87af47d92668effb871c7e61aef766ec15305fbd","admin_user":"bobosolomon","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"fb7e6b3bad173e8b122367734562b5cd"}</script>
 <script src="/js/third-party/comments/gitalk.js"></script>
 
 </body>

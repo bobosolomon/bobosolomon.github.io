@@ -24,4 +24,71 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title></title>
+    <url>/2023/04/12/test/</url>
+    <content><![CDATA[<h3 id="PIAFusion-A-progressive-infrared-and-visible-image-fusion-network-based-on-illumination-aware"><a href="#PIAFusion-A-progressive-infrared-and-visible-image-fusion-network-based-on-illumination-aware" class="headerlink" title="PIAFusion: A progressive infrared and visible image fusion network based on illumination aware"></a>PIAFusion: A progressive infrared and visible image fusion network based on illumination aware</h3><blockquote>
+<p>来源：Information Fusion</p>
+</blockquote>
+<p><strong>论文亮点:</strong></p>
+<p>作者提出的方法————基于照明感知的渐进式红外和可见光图像融合框架（PIAFusion）在<code>目标保持</code>和<code>纹理保存</code>方面强于最先进的替代方法。研究了<code>照明不平衡问题————白天和黑夜场景之间的照明条件的差异</code>。</p>
+<p>对红外图像进行锐化和增强操作，然后去除未对齐的图像对（预处理工作，可以借鉴）。设计了一个照明感知因子网络来评估照明条件——————利用照明感知网络计算当前场景是白天还是夜晚的概率。</p>
+<p>跨模态差异感知融合模块和中途融合策略相结合，在各个阶段整合互补和共享信息。</p>
+<h3 id="DIVFusion-Darkness-free-infrared-and-visible-image-fusion"><a href="#DIVFusion-Darkness-free-infrared-and-visible-image-fusion" class="headerlink" title="DIVFusion: Darkness-free infrared and visible image fusion"></a>DIVFusion: Darkness-free infrared and visible image fusion</h3><blockquote>
+<p>来源: Information Fusion</p>
+</blockquote>
+<h3 id="FusionGAN-A-generative-adversarial-network-for-infrared-and-visible-image-fusion"><a href="#FusionGAN-A-generative-adversarial-network-for-infrared-and-visible-image-fusion" class="headerlink" title="FusionGAN: A generative adversarial network for infrared and visible image fusion"></a>FusionGAN: A generative adversarial network for infrared and visible image fusion</h3><blockquote>
+<p>来源: Information Fusion</p>
+</blockquote>
+<p><strong>论文亮点:</strong></p>
+<p>这篇论文设计了FusionGAN(基于生成对抗网络的融合框架)，这个框架利用生成对抗网络(GAN)的端到端特性可以避免手动设计复杂的活动级别测量和融合规则。</p>
+<p>设计了用于红外光和可见图像融合的损失函数。这篇论文是第一次采用GAN来处理图像融合任务。</p>
+<p>建立和生成器和鉴别器之间的对抗博弈————生成器旨在生成具有红外强度和附加可见梯度的融合图像，鉴别器旨在迫使融合图像具有可见图像中存在的更多细节。这个问题可以看作生成器和鉴别器之间的极大极小问题。（个人猜想：类似博弈论中的双层规划模型）。</p>
+<h3 id="RXDNFuse-A-aggregated-residual-dense-network-for-infrared-and-visible-image-fusion"><a href="#RXDNFuse-A-aggregated-residual-dense-network-for-infrared-and-visible-image-fusion" class="headerlink" title="RXDNFuse: A aggregated residual dense network for infrared and visible image fusion"></a>RXDNFuse: A aggregated residual dense network for infrared and visible image fusion</h3><blockquote>
+<p>来源: Information Fusion</p>
+</blockquote>
+<p>**论文亮点: **</p>
+<p>提出了用于<code>IR/VIS融合任务</code>的无监督网络————RXDFuse，这个网络基于聚集的剩余密集网络。RXDFuse利用总和特征提取和组合，自动估计相应原图像的保存程度，并提取分层特征。</p>
+<p>由于基于CNN的融合方法中，只有最后一个特征提取成的输出作为图像的融合组件，这丢弃了中间卷积层获取的大量有用信息，作者提出了两种损失函数策略来优化模型相似约束和详细信息的质量，其中像素策略直接利用源图像的原始信息，而特征策略基于预训练的VGG-19网络计算更详细的损失函数。</p>
+<h3 id="Image-fusion-in-the-loop-of-high-level-vision-tasks-A-semantic-aware-real-time-infrared-and-visible-image-fusion-network"><a href="#Image-fusion-in-the-loop-of-high-level-vision-tasks-A-semantic-aware-real-time-infrared-and-visible-image-fusion-network" class="headerlink" title="Image fusion in the loop of high-level vision tasks: A semantic-aware real-time infrared and visible image fusion network"></a>Image fusion in the loop of high-level vision tasks: A semantic-aware real-time infrared and visible image fusion network</h3><blockquote>
+<p>来源: Information Fusion</p>
+</blockquote>
+<p><strong>论文亮点:</strong></p>
+<p>由于现在的用法关注图像融合的视觉质量和统计质量，忽略了高级视觉任务的要求，文章提出了语义感知实时图像融合网络（SeAFusion)。设计图像融合模块和语义分割模块，利用语义损失引导高级语义信息回流图像融合模块。语义分割网络来预测融合图像的分割结果，用于构造语义损失，通过反向传播，利用语义损失来指导融合网络的训练。</p>
+<p>设计了梯度剩余密集模块(GRDB),通过主密集流实现特征宠用，通过残余梯度流来提高细粒度细节的描述能力。</p>
+<h3 id="Learning-a-Generative-Model-for-Fusing-Infrared-and-Visible-Images-via-Conditional-Generative-Adversarial-Network-with-Dual-Discriminators"><a href="#Learning-a-Generative-Model-for-Fusing-Infrared-and-Visible-Images-via-Conditional-Generative-Adversarial-Network-with-Dual-Discriminators" class="headerlink" title="Learning a Generative Model for Fusing Infrared and Visible Images via Conditional Generative Adversarial Network with Dual Discriminators"></a>Learning a Generative Model for Fusing Infrared and Visible Images via Conditional Generative Adversarial Network with Dual Discriminators</h3><blockquote>
+<p>来源: Proceedings of the T wenty-Eighth International Joint Conference on Artificial Intelligence </p>
+</blockquote>
+<p><strong>论文亮点:</strong></p>
+<p>主要工作是融合不同分辨率的红外和可见图像。</p>
+<p>通过概率分布的角度解决它，DD从GAN在提取、融合和重建特征之外，还可以增强源图像中的重要特征————热目标和背景之间的对比度。（这篇论文似乎也是博弈论中的双层模型）</p>
+<h3 id="DIDFuse-Deep-Image-Decomposition-for-Infrared-and-Visible-Image-Fusion"><a href="#DIDFuse-Deep-Image-Decomposition-for-Infrared-and-Visible-Image-Fusion" class="headerlink" title="DIDFuse: Deep Image Decomposition for Infrared and Visible Image Fusion"></a>DIDFuse: Deep Image Decomposition for Infrared and Visible Image Fusion</h3><blockquote>
+<p>来源: </p>
+</blockquote>
+<p>提出基于自动编码器(AE)的融合网络。编码器将图像分解为分别具有低和高频信息的背景和细节特征图，解码器恢复图像。</p>
+<h3 id="Efficient-and-Model-Based-Infrared-and-Visible-Image-Fusion-via-Algorithm-Unrolling"><a href="#Efficient-and-Model-Based-Infrared-and-Visible-Image-Fusion-via-Algorithm-Unrolling" class="headerlink" title="Efficient and Model-Based Infrared and Visible Image Fusion via Algorithm Unrolling"></a>Efficient and Model-Based Infrared and Visible Image Fusion via Algorithm Unrolling</h3><blockquote>
+<p>来源: IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS FOR VIDEO TECHNOLOGY</p>
+</blockquote>
+<p><strong>论文亮点:</strong></p>
+<p>建立了两个优化模型完成模型分解，从源图像中分离低频基础信息和高频细节信息。</p>
+<h3 id="NestFuse-An-Infrared-and-Visible-Image-Fusion-Architecture-based-on-Nest-Connection-and-Spatial-x2F-Channel-Attention-Models"><a href="#NestFuse-An-Infrared-and-Visible-Image-Fusion-Architecture-based-on-Nest-Connection-and-Spatial-x2F-Channel-Attention-Models" class="headerlink" title="NestFuse: An Infrared and Visible Image Fusion Architecture based on Nest Connection and Spatial&#x2F;Channel Attention Models"></a>NestFuse: An Infrared and Visible Image Fusion Architecture based on Nest Connection and Spatial&#x2F;Channel Attention Models</h3><h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结:"></a>个人总结:</h2><ul>
+<li><p>对于提出来一种新的框架来解决图像融合问题，一般会设置成端到端模型，能够克服活动水平测量和融合规则的手动和复杂设计的局限性。</p>
+</li>
+<li><p>基于DL的方法可以分为三类：</p>
+<ul>
+<li><p>预训练模型类</p>
+<p>预训练模型类是<code>MSD</code>和<code>DL</code>的组合，MSD之后，对基础图像进行加权平均。然后，通过预训练的神经网络（如 VGG-19）融合具有高频信息的细节图像。</p>
+</li>
+<li><p>生成对抗式网络(GAN)</p>
+<p>在生成器生成具有两个原图像特点的图像，鉴别器通过迫使生成器输出与源可见图像类似的图像来融合图像添加细节信息。</p>
+<p>通过细节损失和目标边缘增强提高融合图像中细节信息的质量。</p>
+</li>
+<li><p>自动编码器（AE）</p>
+<p>编码器和解码器负责特征提取和图像重建。</p>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+  </entry>
 </search>
